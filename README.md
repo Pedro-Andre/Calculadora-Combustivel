@@ -6,7 +6,7 @@
 
 #### Então decidi criar uma interface para este desafio.
 
-### Visitar projeto:
+### Visitar projeto: [Link para o projeto](https://pedro-andre.github.io/Calculadora-Combustivel/)
 
 ## Preview
 
