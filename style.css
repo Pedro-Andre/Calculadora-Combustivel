@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jura", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background: #111;
+}
+
+.calc-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem;
+}
+
+.calc-section .title {
+  color: #eee;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.calc-container {
+  border: 0.2rem solid #999;
+  width: 100%;
+  max-width: 50rem;
+  min-height: 60rem;
+  border-radius: 3rem;
+  background-color: #00000060;
+  backdrop-filter: blur(10rem);
+  padding-inline: 1rem;
+}
+
+.calc-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3rem;
+  padding-block: 1.5rem;
+}
+
+.calc-container label {
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.calc-container input {
+  width: 100%;
+  max-width: 30rem;
+  height: 5rem;
+  border-radius: 1rem;
+  background: #22222280;
+  border: 0.1rem solid #ccc;
+  font-size: 2rem;
+  color: #eee;
+  padding: 0rem 1rem 0.5rem 1rem;
+}
+
+.calc-container .valor-total {
+  color: #eee;
+  font-size: 2.5rem;
+}
+
+.calc-container .valor-total span {
+  color: #dd7700;
+  font-weight: 600;
+}
+
+.calc-container .btns {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.calc-container .btn {
+  width: 100%;
+  max-width: 15rem;
+  height: 5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  background: #dd7700;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.calc-container .btn:hover {
+  scale: 1.05;
+}
+
+.calc-container .clear {
+  background: #00000060;
+  color: #dd7700;
+  border: 0.1rem solid #dd7700;
+}
+
+.orb {
+  position: absolute;
+  width: 100%;
+  max-width: 80rem;
+  height: 80rem;
+  background-color: #dd7700;
+  opacity: 0.45;
+  border-radius: 50%;
+  bottom: -70%;
+  z-index: -3;
+  filter: blur(10rem);
+}
+
+@media (max-width: 550px) {
+  .calc-section .title,
+  .calc-container .valor-total {
+    text-align: center;
+  }
+}

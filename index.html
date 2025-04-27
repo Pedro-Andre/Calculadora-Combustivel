@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuel Calculator</title>
+    <!-- icon -->
+    <link
+      rel="icon"
+      href="https://img.pikbest.com/origin/09/27/56/63qpIkbEsTktU.png!sw800"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- js -->
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="calc-section">
+        <h1 class="title">Calcular valor de Combustível</h1>
+
+        <div class="calc-container">
+          <form action="">
+            <label for="tipo-combustivel">
+              Tipo Combustível:
+              <input type="text" name="tipoCombustivel" id="tipo-combustivel" />
+            </label>
+
+            <label for="preco">
+              Preço combustível:
+              <input
+                type="number"
+                name="preco"
+                id="preco"
+                min="0"
+                max="15"
+                placeholder="0.00"
+              />
+            </label>
+
+            <label for="distancia">
+              Consumo de litros por Km:
+              <input
+                type="number"
+                name="consumo"
+                id="consumo"
+                min="1"
+                placeholder="0 km"
+                step="any"
+              />
+            </label>
+
+            <label for="distancia-km">
+              Distância da viagem (Km):
+              <input
+                type="number"
+                name="distancia"
+                id="distancia"
+                min="1"
+                placeholder="0 km"
+                step="any"
+              />
+            </label>
+
+            <p class="valor-total">
+              Valor Total: R$ <span id="valor-total"></span>
+            </p>
+
+            <div class="btns">
+              <button class="btn clear">Limpar</button>
+              <button type=" submit" class="btn calc">Calcular</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="orb"></div>
+      </section>
+    </main>
+  </body>
+</html>
